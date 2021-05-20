@@ -44,8 +44,12 @@ const Header = () => {
               About
             </Link>
           </li>
-          <li className={styles.navLink}>
-            <a onClick={() => scrollToBottom()} aria-label="contact">
+          <li>
+            <a
+              className={styles.navLink}
+              onClick={() => scrollToBottom()}
+              aria-label="contact"
+            >
               Contact
             </a>
           </li>

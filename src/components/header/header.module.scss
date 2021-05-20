@@ -24,14 +24,14 @@
 .navLink {
   color: $secondary__text;
   margin-bottom: 0.5em;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.2em;
 
   &.selected {
-    border-bottom: 3px solid $highlight__text;
+    border-bottom: 2px solid $highlight__text;
   }
 }
 .navLink:hover {
-  border-bottom: 3px solid $highlight__text;
+  border-bottom: 2px solid $highlight__text;
 }
 ul {
   li {

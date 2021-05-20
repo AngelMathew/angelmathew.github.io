@@ -1,0 +1,54 @@
+@import "../../styles/_variables.scss";
+
+.info {
+  position: relative;
+  display: grid;
+  padding: 4em 0 0 0;
+  min-height: 80vh;
+  align-items: center;
+  grid-template-columns: repeat(12, 1fr);
+}
+.wave {
+  display: inline;
+  align-content: center;
+  position: relative;
+  margin: 0 0.2em;
+
+  img {
+    height: 1em;
+    width: 1em;
+    position: relative;
+    animation: moving 4 0.7s;
+  }
+}
+
+.wave img:hover {
+  position: relative;
+  animation: moving infinite 0.7s;
+}
+
+@keyframes moving {
+  0% {
+    margin: 0;
+  }
+  50% {
+    -webkit-transform: rotate(75deg);
+  }
+}
+
+.infoSummary {
+  grid-column: 2/8;
+
+  button {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .info {
+    height: auto;
+    .infoSummary {
+      grid-column: 2/12;
+    }
+  }
+}
