@@ -1,0 +1,22 @@
+@import "../../styles/_variables.scss";
+
+.button {
+  margin: 2em 0;
+  border-radius: 4px;
+  padding: 0.75em;
+  border: none;
+  color: $secondary__text;
+  cursor: pointer;
+  background-color: $cta__color;
+  font-family: "MarkPro";
+  font-size: $max_font;
+}
+.button:after {
+  content: " 👩🏻‍💻";
+}
+.button:hover:after {
+  content: " 🙋🏻‍♀️";
+}
+.button:hover {
+  box-shadow: 2px 4px 20px $cta__color;
+}
