@@ -20,10 +20,14 @@ html {
 body {
   margin: 0;
   height: 100%;
+  font-family: "MarkPro";
   // overflow-y: scroll;
   overflow-x: hidden;
   background-color: $background__color;
   // font-size: calc(0.75em + 1vmin);
+}
+div {
+  font-family: "MarkPro";
 }
 h1 {
   font-family: "MarkPro";
