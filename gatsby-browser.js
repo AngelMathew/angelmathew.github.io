@@ -1,3 +1,5 @@
+import "./src/styles/_styles.scss"
+
 /**
  * Implement Gatsby's Browser APIs in this file.
  *
