@@ -22,12 +22,13 @@ body {
   height: 100%;
   font-family: "MarkPro";
   // overflow-y: scroll;
-  // overflow-x: hidden;
+  overflow-x: hidden !important;
   background-color: $background__color;
   // font-size: calc(0.75em + 1vmin);
 }
 div {
   font-family: "MarkPro";
+  // overflow-x: hidden;
 }
 h1 {
   font-family: "MarkPro";
@@ -80,7 +81,6 @@ li {
 }
 
 main {
-  overflow-x: hidden;
   height: 100%;
 }
 button {
@@ -102,5 +102,10 @@ a {
   }
   &:after {
     box-sizing: inherit;
+  }
+}
+@media screen and (max-width: 48em) {
+  main {
+    overflow-x: hidden;
   }
 }
