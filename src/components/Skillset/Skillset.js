@@ -1,19 +1,19 @@
 import React, { useEffect } from "react"
 import * as styles from "./Skillset.module.scss"
 import Vector from "../../images/Vector.svg"
-// import AOS from 'aos';
-// import "aos/dist/aos.css";
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 const Skillset = () => {
-  // useEffect(() => {
-  //     AOS.init({
-  //     duration:'500'
-  //     });
-  //   }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: "500",
+    })
+  }, [])
 
   return (
-    <div className={styles.skillSet}>
-      {/* <div className={styles.skillSet}  data-aos="fade">    */}
+    // <div className={styles.skillSet}>
+    <div className={styles.skillSet} data-aos="fade">
       <div className={styles.skillSetSummary}>
         <img
           className={styles.backgroundImage}

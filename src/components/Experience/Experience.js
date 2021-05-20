@@ -1,15 +1,15 @@
 import React, { useEffect } from "react"
 import * as styles from "./Experience.module.scss"
 import Location from "../../images/Location.svg"
-// import AOS from 'aos';
-// import "aos/dist/aos.css";
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 const Experience = () => {
-  // useEffect(() => {
-  //     AOS.init({
-  //     duration:'2000'
-  //     });
-  //   }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: "2000",
+    })
+  }, [])
 
   const tooltipContent = [
     {
@@ -95,8 +95,8 @@ const Experience = () => {
   return (
     <div className={styles.experienceParent}>
       <h2 className={styles.timelineHeading}>Experience</h2>
-      {/* <div className={styles.timelineParent} data-aos="fade-up"> */}
-      <div className={styles.timelineParent}>
+      <div className={styles.timelineParent} data-aos="fade-up">
+        {/* <div className={styles.timelineParent}> */}
         <div className={styles.verticalLine}></div>
         {tooltipValue}
       </div>
