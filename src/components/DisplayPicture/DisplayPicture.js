@@ -1,6 +1,6 @@
 import React from "react"
 import * as styles from "./DisplayPicture.module.scss"
-import DisplayPhoto from "../../images/DP.jpg"
+import DisplayPhoto from "../../images/Dp.jpg"
 
 const DisplayPicture = () => {
   return (
