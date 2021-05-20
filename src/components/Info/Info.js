@@ -2,8 +2,8 @@ import React, { useEffect } from "react"
 import * as styles from "./Info.module.scss"
 import DisplayPicture from "../../components/DisplayPicture/DisplayPicture"
 import Button from "../Button/Button"
-// import Skillset from "../../components/Skillset/Skillset"
-// import Experience from "../../components/Experience/Experience"
+import Skillset from "../../components/Skillset/Skillset"
+import Experience from "../../components/Experience/Experience"
 // import AOS from "aos"
 // import "aos/dist/aos.css";
 import Wave from "../../images/wave.svg"
@@ -39,8 +39,8 @@ const Info = () => {
         </div>
         <DisplayPicture />
       </div>
-      {/* <Skillset />
-      <Experience /> */}
+      <Skillset />
+      <Experience />
       {/* <Timeline/> */}
     </>
   )
