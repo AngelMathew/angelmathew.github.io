@@ -14,7 +14,7 @@ html {
   color: $secondary__text;
   box-sizing: border-box;
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
-  // overflow-x: hidden  !important;
+  // overflow-x: hidden;
   scroll-behavior: smooth;
 }
 body {
@@ -22,7 +22,7 @@ body {
   height: 100%;
   font-family: "MarkPro";
   // overflow-y: scroll;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   background-color: $background__color;
   // font-size: calc(0.75em + 1vmin);
 }
@@ -80,7 +80,7 @@ li {
 }
 
 main {
-  overflow-x: hidden !important;
+  overflow-x: hidden;
   height: 100%;
 }
 button {

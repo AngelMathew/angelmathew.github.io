@@ -6,12 +6,12 @@
  */
 
 import * as React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "../components/header/header"
 import Info from "../components/Info/Info"
+import Contact from "../components/Contact/Contact"
 // import "./layout.css"
+// import PropTypes from "prop-types"
+// import { useStaticQuery, graphql } from "gatsby"
 
 const Layout = ({ children }) => {
   console.log(children)
@@ -33,22 +33,16 @@ const Layout = ({ children }) => {
       <main>
         <Info />
       </main>
-      <footer
-        style={{
-          marginTop: `2rem`,
-        }}
-      >
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+      <footer>
+        <Contact />
       </footer>
       {/* </div> */}
     </>
   )
 }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+// Layout.propTypes = {
+//   children: PropTypes.node.isRequired,
+// }
 
 export default Layout

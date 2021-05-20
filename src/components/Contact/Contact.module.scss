@@ -1,0 +1,72 @@
+@import "../../styles/variables.scss";
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    background-color: $background__color;
+    padding:3em 0 1em 0;
+    box-shadow: 0px 2px 40px $background__shadow;
+    margin-top: 8em;
+hr{
+    margin:1em 0;
+    grid-column: 2/12;
+    border:1px solid $accent;
+    // opacity: .4;
+}
+.authorText{
+    grid-column: 2/12;
+    font-size:small;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .scrollTopButton{
+        outline: none;
+        background-color: transparent;
+        border:none;
+        cursor: pointer;
+    }
+}
+h4{
+    grid-column: 6/8;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.dropComment{
+    grid-column: 4/10;
+    text-align: center;
+    // background-color: aqua;
+}
+.icons{
+    margin-top: .5em;
+    // background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 4/10;
+svg{
+    margin:0 .5em;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    grid-column: 5/10;
+    display: inline;
+    opacity: .9;
+    fill:$highlight__text;
+}
+svg:hover {
+   fill:$subHeading__text; 
+}
+}
+}
+
+@media screen and (max-width: 48em) {
+    .contact{
+        .icons{
+    .contactText{
+        display: none;
+    }
+    }
+}
+        
+}
