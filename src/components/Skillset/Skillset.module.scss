@@ -1,42 +1,39 @@
 @import "../../styles/variables.scss";
 
-
-.skillSet{
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(12,1fr);
-    grid-column: 2/12;
+.skillSet {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 2/12;
 }
-.skillSetSummary{
-    grid-column: 2/12;
-    position: relative;
+.skillSetSummary {
+  grid-column: 2/12;
+  position: relative;
 }
-.backgroundImage{
-    position: absolute;
-    width: 70%;
-    right:0;
-    z-index: -1;
-    opacity: .7;
+.backgroundImage {
+  position: absolute;
+  width: 70%;
+  right: 0;
+  z-index: -1;
+  opacity: 0.7;
 }
-.skillSetList{
+.skillSetList {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 300px));
 
-    display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 300px));
-
-  li{
-      margin:.5em 0 .5em;
+  li {
+    margin: 0.5em 0 0.5em;
   }
   li::before {
-      content: "\26a1";   
-      display: inline-block; 
-      width: .5em; 
-      margin-right: .5em; 
+    content: "\26a1";
+    display: inline-block;
+    width: 0.5em;
+    margin-right: 1em;
   }
 }
 @media screen and (max-width: 48em) {
-    
-.skillSetList{
-    grid-template-columns: repeat(1,1fr);
+  .skillSetList {
+    grid-template-columns: repeat(1, 1fr);
     grid-column: 1/-1;
-}
+  }
 }

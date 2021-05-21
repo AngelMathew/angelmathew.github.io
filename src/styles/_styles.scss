@@ -20,9 +20,10 @@ html {
 body {
   margin: 0;
   height: 100%;
+  // width: 100%;
   font-family: "MarkPro";
   // overflow-y: scroll;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
   background-color: $background__color;
   // font-size: calc(0.75em + 1vmin);
 }
@@ -81,7 +82,8 @@ li {
 }
 
 main {
-  height: 100%;
+  overflow-x: hidden !important;
+  position: relative;
 }
 button {
   font-family: "MarkPro";
@@ -97,15 +99,11 @@ a {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+  // overflow-x: hidden;
   &:before {
     box-sizing: inherit;
   }
   &:after {
     box-sizing: inherit;
-  }
-}
-@media screen and (max-width: 48em) {
-  main {
-    overflow-x: hidden;
   }
 }
