@@ -9,20 +9,21 @@
   grid-template-columns: repeat(12, 1fr);
 }
 .wave {
-  display: inline;
-  align-content: center;
+  display: inline-block;
+  // padding: 1em;
+  // align-content: center;
   position: relative;
-  margin: 0 0.2em;
+  // margin: 0 0.2em;
 
-  img {
-    height: 1em;
-    width: 1em;
-    position: relative;
-    animation: moving 4 0.7s;
-  }
+  // img {
+  // height: 1em;
+  // width: 1em;
+  // position: relative;
+  animation: moving 4 0.7s;
+  // }
 }
 
-.wave img:hover {
+.wave:hover {
   position: relative;
   animation: moving infinite 0.7s;
 }
@@ -33,6 +34,8 @@
   }
   50% {
     -webkit-transform: rotate(75deg);
+  }
+  100% {
   }
 }
 

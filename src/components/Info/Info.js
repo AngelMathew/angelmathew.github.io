@@ -6,7 +6,7 @@ import Skillset from "../../components/Skillset/Skillset"
 import Experience from "../../components/Experience/Experience"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import Wave from "../../images/wave.svg"
+// import Wave from "../../images/wave.svg"
 
 const Info = () => {
   useEffect(() => {
@@ -21,18 +21,15 @@ const Info = () => {
           <div>
             <h5>
               Hi there
-              <div className={styles.wave}>
-                <img alt="Waving hand" src={Wave}></img>
-              </div>
-              ! my name is
+              <div className={styles.wave}> 👋 </div> ! I'm
             </h5>
           </div>
-          <h1>Angel Anna Mathew</h1>
+          <h1>Angel Anna Mathew,</h1>
           <br></br>
           <p>
-            I’m a Toronto based front-end developer, who enjoys building smooth
-            UI/UX. I work with Angular/React to develop responsive, performant,
-            and accessible web apps. Currently, I work at Bell Canada.
+            a Toronto based front-end developer, currently working at Bell
+            Canada. I focus on crafting responsive, performant, and accessible
+            digital experiences.
           </p>
           <br></br>
           <Button />

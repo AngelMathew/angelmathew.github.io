@@ -80,7 +80,9 @@ label {
 li {
   color: $secondary__text;
 }
-
+.highlighted {
+  color: $highlight__text;
+}
 main {
   overflow-x: hidden !important;
   position: relative;
