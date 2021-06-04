@@ -11,12 +11,12 @@ import "aos/dist/aos.css"
 const Info = () => {
   useEffect(() => {
     AOS.init({
-      duration: "3000",
+      duration: "1000",
     })
   }, [])
   return (
     <>
-      <div className={styles.info} data-aos="fade-in">
+      <section className={styles.info} data-aos="fade">
         <div className={styles.infoSummary}>
           <div>
             <h5>
@@ -35,7 +35,7 @@ const Info = () => {
           <Button />
         </div>
         <DisplayPicture />
-      </div>
+      </section>
       <Skillset />
       <Experience />
       {/* <Timeline/> */}

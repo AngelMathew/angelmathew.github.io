@@ -15,12 +15,12 @@ html {
   box-sizing: border-box;
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
   // overflow-x: hidden;
+  // overflow-y: scroll;
   scroll-behavior: smooth;
 }
 body {
   margin: 0;
   height: 100%;
-  // width: 100%;
   font-family: "MarkPro";
   // overflow-y: scroll;
   overflow-x: hidden;
@@ -29,7 +29,9 @@ body {
 }
 div {
   font-family: "MarkPro";
-  // overflow-x: hidden;
+}
+#___gatsby {
+  overflow-x: hidden;
 }
 h1 {
   font-family: "MarkPro";
@@ -84,7 +86,7 @@ li {
   color: $highlight__text;
 }
 main {
-  overflow-x: hidden !important;
+  // overflow-x: hidden !important;
   position: relative;
 }
 button {

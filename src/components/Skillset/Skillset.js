@@ -13,7 +13,7 @@ const Skillset = () => {
 
   return (
     // <div className={styles.skillSet}>
-    <div className={styles.skillSet} data-aos="fade">
+    <section className={styles.skillSet} data-aos="fade-in">
       <div className={styles.skillSetSummary}>
         <img
           className={styles.backgroundImage}
@@ -73,7 +73,7 @@ const Skillset = () => {
           <li>Strapi</li>
         </ul>
       </div>
-    </div>
+    </section>
   )
 }
 

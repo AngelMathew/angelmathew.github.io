@@ -7,16 +7,16 @@ import "aos/dist/aos.css"
 const Experience = () => {
   useEffect(() => {
     AOS.init({
-      duration: "2000",
+      duration: "1000",
     })
   }, [])
 
   const tooltipContent = [
     {
       id: 1,
-      duration: "Oct'19 - Now",
+      duration: "Oct'2019 - Now",
       company:
-        "Front-end developer @ <a href='https://www.bell.ca' target='_blank'>Bell Canada</a>",
+        "Front-end developer @ <a href='https://www.bell.ca' target='_blank' title='Bell Canada' aria-label='Bell Canada' rel='noopener noreferrer' >Bell Canada</a>",
       location: "Toronto",
       responsibilities:
         "<ul><li><span>Develop single page applications consuming server side JSON RESTful services.</span></li><li><span>Work with a wide range of technologies such as JavaScript, TypeScript, HTML, Modern (S)CSS,Angular, React, WordPress, Strapi and Contentful.</span></li><li><span>Work closely with UX designers, project managers , back-end developers to implement versatile solutions.</span></li></ul> ",
@@ -25,9 +25,9 @@ const Experience = () => {
     },
     {
       id: 2,
-      duration: "Jan'19 - July'19",
+      duration: "Jan'2019 - July'2019",
       company:
-        "Python Lab Assistant @ <a href='https://www.dal.ca/' target='_blank' aria-label='link to Dalhousie'>Dalhousie University</a>",
+        "Python Lab Assistant @ <a href='https://www.dal.ca/' target='_blank' title='Dalhousie University' aria-label='Dalhousie University' rel='noopener noreferrer' >Dalhousie University</a>",
       location: "Halifax,NS",
       responsibilities:
         "<ul><li><span>Helped students to understand algorithms and data structures.</span></li><li><span>Supported students to debug and understand the Python code.</span></li><li><span>Assisted students with python language, Flask Framework, Git version control.</span></li></ul> ",
@@ -36,9 +36,9 @@ const Experience = () => {
     },
     {
       id: 3,
-      duration: "Jan'18 - July'19",
+      duration: "Jan'2018 - July'2019",
       company:
-        "M.Eng in Internetworking @ <a href='https://www.dal.ca/' target='_blank' aria-label='link to Dalhousie'>Dalhousie University</a>",
+        "M.Eng in Internetworking @ <a href='https://www.dal.ca/' target='_blank'  title='Dalhousie University' aria-label='Dalhousie University' rel='noopener noreferrer'>Dalhousie University</a>",
       location: "Halifax,NS",
       responsibilities: "",
       parentClass: "timelineComponentRight",
@@ -46,9 +46,9 @@ const Experience = () => {
     },
     {
       id: 4,
-      duration: "Nov'15 - Jan'18",
+      duration: "Nov'2015 - Jan'2018",
       company:
-        "Front-end developer @ <a href='https://www.tcs.com/' target='_blank' aria-label='link to TCS'>TCS</a>",
+        "Front-end developer @ <a href='https://www.tcs.com/' target='_blank' title='TCS' aria-label='TCS' rel='noopener noreferrer'>TCS</a>",
       location: "Kochi, India",
       responsibilities:
         "<ul><li><span>Collaborated with back-end developers to integrate the front-end with the APIs.</span></li><li><span>Worked on Angular Material design along with AngularJS in creating the Application.</span></li><li><span>Accomplished initial learning in Android Mobile Application Development.</span></li></ul> ",
@@ -57,9 +57,9 @@ const Experience = () => {
     },
     {
       id: 5,
-      duration: "Sep'11 - May'2015",
+      duration: "Sep'2011 - May'2015",
       company:
-        "B.Tech in Computer Science Engineering @ <a href='http://www.mace.ac.in/' target='_blank' aria-label='link to Mahatma Gandhi university'>Mahatma Gandhi University</a> ",
+        "B.Tech in Computer Science Engineering @ <a href='http://www.mace.ac.in/' target='_blank'  title='Mahatma Gandhi University' aria-label='Mahatma Gandhi University' rel='noopener noreferrer'>Mahatma Gandhi University</a> ",
       location: "Kerala, India",
       responsibilities: "",
       parentClass: "timelineComponentRight",
@@ -93,14 +93,14 @@ const Experience = () => {
   })
 
   return (
-    <div className={styles.experienceParent}>
+    <section className={styles.experienceParent}>
       <h2 className={styles.timelineHeading}>Experience</h2>
       <div className={styles.timelineParent} data-aos="fade-up">
         {/* <div className={styles.timelineParent}> */}
         <div className={styles.verticalLine}></div>
         {tooltipValue}
       </div>
-    </div>
+    </section>
   )
 }
 
