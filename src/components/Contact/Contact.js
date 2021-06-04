@@ -18,6 +18,7 @@ const Contact = () => {
         <a
           href="https://www.linkedin.com/in/angelannamathew"
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="link to https://www.linkedin.com/in/angelannamathew"
         >
           <svg id="linkedin-mask" viewBox="0 0 64 64">
