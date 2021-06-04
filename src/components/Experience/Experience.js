@@ -72,15 +72,15 @@ const Experience = () => {
       <div className={`${styles[data.parentClass]}`} key={data.id}>
         <div className={styles.timelineCircle}></div>
         <div className={`${styles[data.childClass]}`}>
-          <h6 className={styles.duration}>{data.duration}</h6>
-          <p
+          <label className={styles.duration}>{data.duration}</label>
+          <h5
             className={styles.company}
             dangerouslySetInnerHTML={{ __html: `${data.company}` }}
-          ></p>
+          ></h5>
           <div className={styles.location}>
             <img src={Location} alt="location icon"></img>
             <b>
-              <h6>{data.location}</h6>
+              <span className={styles.location}>{data.location}</span>
             </b>
           </div>
           <div

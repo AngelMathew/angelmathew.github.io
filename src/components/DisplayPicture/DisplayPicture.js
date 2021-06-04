@@ -6,7 +6,13 @@ const DisplayPicture = () => {
   return (
     <div className={styles.displayPicture}>
       <figure>
-        <img src={DisplayPhoto} alt="Display Picture"></img>
+        <img
+          src={DisplayPhoto}
+          alt="Display Picture"
+          loading="lazy"
+          height="300px"
+          width="100px"
+        ></img>
       </figure>
     </div>
   )

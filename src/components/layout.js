@@ -6,45 +6,21 @@
  */
 
 import * as React from "react"
-import Header from "../components/header/header"
-import Info from "../components/Info/Info"
-import Contact from "../components/Contact/Contact"
-// import "./layout.css"
-// import PropTypes from "prop-types"
-// import { useStaticQuery, graphql } from "gatsby"
+import PropTypes from "prop-types"
+import SEO from "./seo"
 
-const Layout = ({ children }) => {
-  console.log(children)
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
-
+const Layout = ({ children, title, description = "" }) => {
   return (
     <>
-      {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
-      <main title="Angel's Portfolio">
-        <Header />
-        {/* <div> */}
-
-        <Info />
-
-        <footer>
-          <Contact />
-        </footer>
-      </main>
-      {/* </div> */}
+      <SEO title={title} description={description} />
+      {children}
     </>
   )
 }
 
-// Layout.propTypes = {
-//   children: PropTypes.node.isRequired,
-// }
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
+}
 
 export default Layout

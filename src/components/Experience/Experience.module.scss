@@ -1,237 +1,246 @@
 @import "../../styles/variables.scss";
-$circle_dimention:1vw;
+$circle_dimention: 1vw;
 
-.experienceParent{
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    margin-top: 2em;
+.experienceParent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 2em;
 }
-.timelineParent{
-    grid-column: 2/12;
-    height:auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
+h5 {
+  color: $primary__text;
 }
-.timelineHeading{
-    grid-column: 2/12;
+.timelineParent {
+  grid-column: 2/12;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
 }
-.timelineCircle{
-    margin: 1em 0;
-    min-width: $circle_dimention;
-    min-height:$circle_dimention;
-    max-width:$circle_dimention;
-    max-height: $circle_dimention;
-    background-color: $tooltip__border__color;
-    border-radius: 50%;
-    border: 4px solid $tooltip__border__color;
-    box-shadow: 0px 2px 4px $tooltip__border__shadow;
+.timelineHeading {
+  grid-column: 2/12;
+}
+.timelineCircle {
+  margin: 1em 0;
+  min-width: $circle_dimention;
+  min-height: $circle_dimention;
+  max-width: $circle_dimention;
+  max-height: $circle_dimention;
+  background-color: $tooltip__border__color;
+  border-radius: 50%;
+  border: 4px solid $tooltip__border__color;
+  box-shadow: 0px 2px 4px $tooltip__border__shadow;
 }
 
-.verticalLine{
-    border: 2px solid $tooltip__border__color;
-    height: 100%;
-    position: absolute;
-    border-radius: 20px;
-    margin-top: 1em;
-    left: 50%;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to($tooltip__border__color), color-stop(50%, tooltip__border__color));
-     
+.verticalLine {
+  border: 2px solid $tooltip__border__color;
+  height: 100%;
+  position: absolute;
+  border-radius: 20px;
+  margin-top: 1em;
+  left: 50%;
+  background: -webkit-gradient(
+    linear,
+    0 0,
+    100% 0,
+    from(white),
+    to($tooltip__border__color),
+    color-stop(50%, tooltip__border__color)
+  );
 }
-.timelineComponentRight{
-    margin:2em 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width:42vw;
-    align-self: flex-end;
+.timelineComponentRight {
+  margin: 2em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 42vw;
+  align-self: flex-end;
 }
-.timelineTooltipRightSmall,.timelineTooltipRightLarge{
-    background: $tooltip__body;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius:10px;
-    padding: 1em;
-    width: 100%;
-    margin-left: 1em;
-    position: relative;
-    border:2px solid  $tooltip__border;
-    box-shadow: 0px 16px 20px $tooltip__border__shadow;
+.timelineTooltipRightSmall,
+.timelineTooltipRightLarge {
+  background: $tooltip__body;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 1em;
+  width: 100%;
+  margin-left: 1em;
+  position: relative;
+  border: 2px solid $tooltip__border;
+  box-shadow: 0px 16px 20px $tooltip__border__shadow;
 }
 
 .timelineTooltipRightSmall::after {
-    top: 14px;
-    left: -60px;
-    border: 2px solid $tooltip__border;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: $tooltip__after__border;
-    border-top-color:$tooltip__body;
-    border-width: 13px;
-    margin-left: 36px;
-    transform: rotate(90deg);
-  }
-  .timelineTooltipRightSmall::before {
-    content: "";
-    position: absolute;
-    transform: rotate(135deg);
-    width: 34px;
-    height: 20px;
-    bottom: 3px;
-    z-index: -1;
-    left: -12px;
-    top: 12px;
-    border:2px solid $tooltip__border;
-    // box-shadow: 0px 0px 30px $tooltip__border__shadow;
-  }
-  .timelineTooltipRightLarge::after {
-    top: 14px;
-    left: -60px;
-    border: 2px solid $tooltip__border;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: $tooltip__after__border;
-    border-top-color: $tooltip__body;
-    border-width: 13px;
-    margin-left: 36px;
-    transform: rotate(90deg);
-  }
-  .timelineTooltipRightLarge::before {
-    content: "";
-    position: absolute;
-    transform: rotate(135deg);
-    width: 34px;
-    height: 20px;
-    bottom: 3px;
-    z-index: -1;
-    left: -12px;
-    top: 12px;
-    border:2px solid $tooltip__border;
-    // box-shadow: 10px 10px 20px rgba(81, 106, 240, 0.11);
-  }
-
-.timelineComponentLeft{
-    margin-top:2em;
-    display: flex;
-    flex-direction: row-reverse;
-    width:42.3vw;
-    justify-content: flex-start;
+  top: 14px;
+  left: -60px;
+  border: 2px solid $tooltip__border;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: $tooltip__after__border;
+  border-top-color: $tooltip__body;
+  border-width: 13px;
+  margin-left: 36px;
+  transform: rotate(90deg);
+}
+.timelineTooltipRightSmall::before {
+  content: "";
+  position: absolute;
+  transform: rotate(135deg);
+  width: 34px;
+  height: 20px;
+  bottom: 3px;
+  z-index: -1;
+  left: -12px;
+  top: 12px;
+  border: 2px solid $tooltip__border;
+  // box-shadow: 0px 0px 30px $tooltip__border__shadow;
+}
+.timelineTooltipRightLarge::after {
+  top: 14px;
+  left: -60px;
+  border: 2px solid $tooltip__border;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: $tooltip__after__border;
+  border-top-color: $tooltip__body;
+  border-width: 13px;
+  margin-left: 36px;
+  transform: rotate(90deg);
+}
+.timelineTooltipRightLarge::before {
+  content: "";
+  position: absolute;
+  transform: rotate(135deg);
+  width: 34px;
+  height: 20px;
+  bottom: 3px;
+  z-index: -1;
+  left: -12px;
+  top: 12px;
+  border: 2px solid $tooltip__border;
+  // box-shadow: 10px 10px 20px rgba(81, 106, 240, 0.11);
 }
 
-.timelineTooltipLeft{
-    position: relative;
-    background-color: $tooltip__body;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    padding: 1em;
-    display: block;
-    margin-right: 1em;
-    border:2px solid $tooltip__border;
-    box-shadow: 0px 16px 20px $tooltip__border__shadow;
+.timelineComponentLeft {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 42.3vw;
+  justify-content: flex-start;
+}
 
-   
+.timelineTooltipLeft {
+  position: relative;
+  background-color: $tooltip__body;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 1em;
+  display: block;
+  margin-right: 1em;
+  border: 2px solid $tooltip__border;
+  box-shadow: 0px 16px 20px $tooltip__border__shadow;
 }
 .timelineTooltipLeft:after {
-    top: 10px;
-    right: -27px;
-    border: 2px solid $tooltip__border;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: $tooltip__after__border;
-    border-top-color: $tooltip__body;
-    border-width: 14px;
-    transform: rotate(270deg);
+  top: 10px;
+  right: -27px;
+  border: 2px solid $tooltip__border;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: $tooltip__after__border;
+  border-top-color: $tooltip__body;
+  border-width: 14px;
+  transform: rotate(270deg);
+}
+.timelineTooltipLeft:before {
+  content: "";
+  position: absolute;
+  transform: rotate(135deg);
+  width: 38px;
+  height: 26px;
+  bottom: 3px;
+  z-index: -1;
+  right: -13px;
+  top: 15px;
+  border: 2px solid $tooltip__border;
+  // box-shadow: -10px -10px 20px $tooltip__before__shadow;
+}
+.company {
+  word-wrap: break-word;
+  a {
+    text-decoration: underline;
   }
-  .timelineTooltipLeft:before {
-    content: "";
-    position: absolute;
-    transform: rotate(135deg);
-    width: 38px;
-    height: 26px;
-    bottom: 3px;
-    z-index: -1;
-    right: -13px;
-    top: 15px;
-    border:2px solid $tooltip__border;
-    // box-shadow: -10px -10px 20px $tooltip__before__shadow;
-  }
-  .company{
-    word-wrap: break-word;
-    a{
-        text-decoration: underline;
-    }
-    }
+}
 
-.duration{
-  margin-bottom: .5em;
-  }
-.location{
+.duration {
+  margin-bottom: 0.5em;
+}
+.location {
   display: flex;
   color: $highlight__text;
   font-weight: bold;
-  img{
-      margin-right:.5em ;
+  img {
+    margin-right: 0.5em;
   }
 }
 
-.tooltipSkillSet{
+.tooltipSkillSet {
   display: grid;
   overflow: hidden;
-  span{
-      display: block;
-      margin-left: 1em;
+  span {
+    display: block;
+    margin-left: 1em;
   }
-  ul,li{
-      margin-left: 10px;
-      list-style: disc;
+  ul,
+  li {
+    margin-left: 10px;
+    list-style: disc;
   }
-  li{
-    margin:.5em 0 .5em;
+  li {
+    margin: 0.5em 0 0.5em;
   }
 }
 @media screen and (max-width: 48em) {
-    .timelineComponentRight{
-        align-self: flex-start;
-        width: 100%;
-        margin:0px;
-        padding:0px;
-        margin-bottom:2em;
-    }
-    .timelineCircle,.verticalLine{
-        display: none;
-    }
-    .timelineComponentLeft{
-        justify-content: flex-end;
-        width: 100%;
-        margin:0px;
-        padding:0px;
-        margin-bottom:2em;
-    }
-    .timelineTooltipRightLarge,.timelineTooltipRightSmall,.timelineTooltipLeft
-    {
-        margin:0;
-    }
-    .timelineTooltipRightLarge::after,
-    .timelineTooltipRightLarge::before,
-    .timelineTooltipRightSmall::before,
-    .timelineTooltipRightSmall::after,
-    .timelineTooltipLeft::after,
-    .timelineTooltipLeft::before
-    {
-        border:none;
-        width: unset;
-        height: unset;
-     }
-
+  .timelineComponentRight {
+    align-self: flex-start;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 2em;
+  }
+  .timelineCircle,
+  .verticalLine {
+    display: none;
+  }
+  .timelineComponentLeft {
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 2em;
+  }
+  .timelineTooltipRightLarge,
+  .timelineTooltipRightSmall,
+  .timelineTooltipLeft {
+    margin: 0;
+  }
+  .timelineTooltipRightLarge::after,
+  .timelineTooltipRightLarge::before,
+  .timelineTooltipRightSmall::before,
+  .timelineTooltipRightSmall::after,
+  .timelineTooltipLeft::after,
+  .timelineTooltipLeft::before {
+    border: none;
+    width: unset;
+    height: unset;
+  }
 }
