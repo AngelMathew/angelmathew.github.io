@@ -6,6 +6,7 @@
   padding: 4em 0 0 0;
   min-height: 80vh;
   align-items: center;
+  grid-auto-flow: dense;
   grid-template-columns: repeat(12, 1fr);
 }
 .wave {
@@ -50,8 +51,11 @@
 @media screen and (max-width: 48em) {
   .info {
     height: auto;
+    grid-auto-flow: dense;
     .infoSummary {
       grid-column: 2/12;
+      margin-top: 2em;
+      // background-color: aqua;
     }
   }
 }

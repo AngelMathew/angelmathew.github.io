@@ -13,13 +13,24 @@ const Experience = () => {
 
   const tooltipContent = [
     {
+      id: 6,
+      duration: "July'2021 - Now",
+      company:
+        "Front-end developer @ <a href='https://www.rangle.io' target='_blank' title='Rangle' aria-label='Rangle' rel='noopener noreferrer' >Rangle.io</a>",
+      location: "Toronto",
+      responsibilities:
+      "<ul><li><span>Work with a wide range of frameworks and technologies such as ES6, TypeScript, Angular, React and Ionic.</span></li><li></ul>",
+      parentClass: "timelineComponentLeft",
+      childClass: "timelineTooltipLeft",
+    },
+    {
       id: 1,
-      duration: "Oct'2019 - Now",
+      duration: "Oct'2019 - July'2021",
       company:
         "Front-end developer @ <a href='https://www.bell.ca' target='_blank' title='Bell Canada' aria-label='Bell Canada' rel='noopener noreferrer' >Bell Canada</a>",
       location: "Toronto",
       responsibilities:
-        "<ul><li><span>Develop single page applications consuming server side JSON RESTful services.</span></li><li><span>Work with a wide range of technologies such as JavaScript, TypeScript, HTML, Modern (S)CSS,Angular, React, WordPress, Strapi and Contentful.</span></li><li><span>Work closely with UX designers, project managers , back-end developers to implement versatile solutions.</span></li></ul> ",
+        "<ul><li><span>Developed single page applications consuming server side JSON RESTful services.</span></li><li><span>Led the development of web apps using CMS : headless WordPress, Contentful, Strapi.</span></li><li><span>Worked closely with UX designers, project managers , back-end developers to implement versatile solutions.</span></li></ul> ",
       parentClass: "timelineComponentRight",
       childClass: "timelineTooltipRightLarge",
     },
@@ -60,7 +71,7 @@ const Experience = () => {
       duration: "Sep'2011 - May'2015",
       company:
         "B.Tech in Computer Science Engineering @ <a href='http://www.mace.ac.in/' target='_blank'  title='Mahatma Gandhi University' aria-label='Mahatma Gandhi University' rel='noopener noreferrer'>Mahatma Gandhi University</a> ",
-      location: "Kerala, India",
+      location: "Kottayam, India",
       responsibilities: "",
       parentClass: "timelineComponentRight",
       childClass: "timelineTooltipRightSmall",

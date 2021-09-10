@@ -23,13 +23,12 @@ const Skillset = () => {
         <h2>About</h2>
         <span>
           I hail from a southern state in India called Kerala 🌴, and for the
-          last few years I’ve been living in Canada.At Bell, I work with
+          last few years I’ve been living in Canada. At Rangle, I work with
           <span className={styles.highlighted}> Angular/React</span> to build
           web applications targeting both mobile devices and desktop clients.
-          Before Bell, I did Master of Engineering degree in Inter-networking at
-          Dalhousie University (Dal), Halifax. Besides my studies at Dal, I also
-          worked as a Python Lab assistant, helping students with Python
-          language, Flask framework, and Git version control.
+          Prior to Rangle, I worked at Bell Canada in their Field Services department, 
+          where I developed (and occasionally designed) internal projects and web applications used by technicians and control centre agents in servicing Bell's end customers. 
+
         </span>
         <br></br>
         <span>
@@ -60,14 +59,15 @@ const Skillset = () => {
 
         <ul className={styles.skillSetList}>
           <li>JavaScript (ES6+)</li>
-          <li>Modern (S)CSS</li>
-          <li>HTML5</li>
           <li>TypeScript</li>
           <li>React</li>
-          <li>Gatsby</li>
           <li>Angular</li>
-          <li>UI/UX Design</li>
           <li>Python</li>
+          <li>Ionic</li>
+          <li>Modern (S)CSS</li>
+          <li>HTML5</li>
+          <li>Gatsby</li>
+          <li>UI/UX Design</li>
           <li>Contentful</li>
           <li>WordPress</li>
           <li>Strapi</li>

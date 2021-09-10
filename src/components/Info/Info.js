@@ -27,9 +27,8 @@ const Info = () => {
           <h1>Angel Anna Mathew,</h1>
           <br></br>
           <p>
-            a Toronto based front-end developer, currently working at Bell
-            Canada. I focus on crafting responsive, performant, and accessible
-            digital experiences.
+          a Toronto based front-end developer, currently working at Rangle.io. I focus on crafting responsive, performant, and accessible
+          digital experiences.
           </p>
           <br></br>
           <Button />
