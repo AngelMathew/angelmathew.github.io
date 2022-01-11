@@ -7,7 +7,7 @@ const Button = () => {
   }
   return (
     <button className={styles.button} onClick={() => scrollToBottom()}>
-      Let's chat
+      Let's connect
     </button>
   )
 }

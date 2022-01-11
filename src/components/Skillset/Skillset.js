@@ -23,9 +23,8 @@ const Skillset = () => {
         <h2>About</h2>
         <span>
           I hail from a southern state in India called Kerala 🌴, and for the
-          last few years I’ve been living in Canada. At Rangle, I work with
-          <span className={styles.highlighted}> Angular/React</span> to build
-          web applications targeting both mobile devices and desktop clients.
+          last few years I’ve been living in Canada. At Rangle, 
+          I develop web app for a major American airline.
           Prior to Rangle, I worked at Bell Canada in their Field Services department, 
           where I developed (and occasionally designed) internal projects and web applications used by technicians and control centre agents in servicing Bell's end customers. 
 

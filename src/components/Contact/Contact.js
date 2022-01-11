@@ -9,9 +9,9 @@ const Contact = () => {
 
   return (
     <div className={styles.contact} id="contact">
-      <h4>Get in Touch</h4>
+      <h4>Let's Connect</h4>
       <p className={styles.dropComment}>
-        Drop me a comment, I would love to hear from you
+        Drop me a comment, I would love to hear from you  ❤️ 
       </p>
       <div className={styles.icons}>
         <p className={styles.contactText}>Connect with me on </p>
@@ -39,7 +39,7 @@ const Contact = () => {
       <hr></hr>
 
       <div className={styles.authorText}>
-        <label>© 2021 - Designed and Developed by Angel Anna Mathew</label>
+        <label>© 2022 - Designed and Developed by Angel Anna Mathew</label>
         <button
           aria-label="Arrow"
           className={styles.scrollTopButton}

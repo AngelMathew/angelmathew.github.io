@@ -26,9 +26,25 @@
 
 @media screen and (max-width: 48em) {
   .displayPicture {
-    grid-column: 2/12;
+    grid-column: 6;
     max-width: 100%;
     grid-row: 1;
+    position: relative;
+    width: 50vw;
+    height: 50vw;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 16px 20px $display__photo__shadow;
+    border: 2px solid $cta__color;
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border:none;
+  }
    
   }
   .displayPicture:after {
