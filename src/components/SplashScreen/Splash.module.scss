@@ -1,0 +1,45 @@
+@import "../../styles/variables.scss";
+
+.element {
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: #bb4269;
+    animation-name: stretch;
+    animation-duration: 2s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+  
+  @keyframes stretch {
+    0% {
+      transform: scale(.2);
+      // background-color: #8f304e;
+      border-radius: 100%;
+    }
+    50% {
+      // background-color: #553772;
+    }
+    100% {
+      transform: scale(1.5);
+      // background-color: #160F31;
+    }
+  }
+ 
+  
+.splashScreen {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+

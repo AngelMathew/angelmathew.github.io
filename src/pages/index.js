@@ -4,23 +4,40 @@ import Layout from "../components/layout"
 import Header from "../components/header/header"
 import Info from "../components/Info/Info"
 import Contact from "../components/Contact/Contact"
+import { useEffect,useState } from "react"
+import Splash from "../components/SplashScreen/Splash"
 
 const IndexPage = () => {
-  // const siteTitle = data.site.siteMetadata?.title || `Title`
-
+ 
+const[isLoading,setisLoading]=useState(true)
+useEffect(() => {
+ setTimeout(()=>{
+   setisLoading(false)
+ },2000)
+}, [])
   return (
     <Layout title="Angel Anna Mathew">
-      <header>
-        <Header />
-      </header>
-
-      <main>
-        <Info />
-      </main>
-
-      <footer>
-        <Contact />
-      </footer>
+      {isLoading ? (
+        <>
+        <Splash/></>
+      
+       ) : 
+      (
+        <>
+        <header>
+          <Header />
+        </header>
+  
+        <main>
+          <Info />
+        </main>
+  
+        <footer>
+        <Contact/>
+        </footer>
+        </>
+      )} 
+      
     </Layout>
   )
 }

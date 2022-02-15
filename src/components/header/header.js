@@ -27,7 +27,7 @@ const Header = () => {
         </ul> */}
 
         <Link to="/" className={styles.textClass}>
-          <img src={Logo} alt="Logo Image"></img>
+          <img src={Logo} alt="Logo Image" className={styles.logo}></img>
         </Link>
 
         <ul className={styles.mainNavLink}>
