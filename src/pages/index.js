@@ -13,7 +13,7 @@ const[isLoading,setisLoading]=useState(true)
 useEffect(() => {
  setTimeout(()=>{
    setisLoading(false)
- },2000)
+ },1800)
 }, [])
   return (
     <Layout title="Angel Anna Mathew">
