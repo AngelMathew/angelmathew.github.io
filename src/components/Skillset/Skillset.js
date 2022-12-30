@@ -22,35 +22,26 @@ const Skillset = () => {
         ></img>
         <h2>About</h2>
         <span>
-          I hail from a southern state in India called Kerala 🌴, and for the
-          last few years I’ve been living in Canada. At Rangle, 
-          I develop web app for a major American airline.
-          Prior to Rangle, I worked at Bell Canada in their Field Services department, 
-          where I developed (and occasionally designed) internal projects and web applications used by technicians and control centre agents in servicing Bell's end customers. 
+        I hail from a southern state in India called Kerala 🌴, and I have been residing in Canada for the past few years. At Rangle, I develop web apps for a major American airline. Prior to Rangle, I worked at Bell Canada in their Field Services department, where I developed in-house projects and web applications used by technicians and control center agents in servicing Bell's end customers. 
 
         </span>
         <br></br>
         <span>
-          I have 4+ years of experience in front-end development, where I
-          specialize in translating UX mockups into responsive interfaces that
-          work seamlessly across any device. I also occasionally design user
-          experiences to high-fidelity prototypes.
+        I have spent the past 5 years in front-end development, specializing in Angular, Vue.js, and React. I worked for clients in the automotive, electronics, pharmaceutical, and telecommunications sectors. This diverse exposure allowed me to balance solutions between customer needs and user experience.
         </span>
         <span>
-          My interest in web development started in last years of my bachelor’s
-          degree in Computer Science Engineering. Soon after graduation I
-          started my career at Tata Consultancy Services (TCS), India as a
-          front-end developer and worked on web applications using AngularJS,
-          Angular, HTML5, CSS3, JavaScript.
-        </span>
-        <span>
-          Apart from UI/UX, I have an interest in full-stack development, in
-          particular, I enjoy coding in Python.
+        I felt drawn towards web application development in the last years of my bachelor's degree in Computer Science Engineering. Soon after graduation, I worked for Tata Consultancy Services (TCS), an IT/consulting firm based in India, as a developer. I have been fortunate to work alongside many amazing co-workers, mentors, and clients who have supported me in learning and growing.
         </span>
         <br></br>
-        <span aria-label="cooking, working out , watching dog cat and bunny videos">
-          *In my off time, you will find me cooking, working out, or watching
-          adorable animal videos, especially 🐶 🐱 🐰 .
+        <span>
+          <q><b>The more I learn, the more I realize how much I don't know</b></q>
+          
+          
+          &nbsp; &mdash; Albert Einstein</span>
+        
+        <br></br>
+        <span aria-label="cooking,hiking, petting dogs">
+          *In my downtime, I enjoy hiking/biking at nearby trails with my partner, watching Netflix, cooking, trying out new recipes, and petting my neighbor's dog, 'Chikku' 🐶  .
         </span>
         <h3>Skills :</h3>
 

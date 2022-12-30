@@ -19,7 +19,7 @@ const Experience = () => {
         "Front-end developer @ <a href='https://www.rangle.io' target='_blank' title='Rangle' aria-label='Rangle' rel='noopener noreferrer' >Rangle.io</a>",
       location: "Toronto",
       responsibilities:
-      "<ul><li><span>Work with a wide range of frameworks and technologies such as ES6, TypeScript, Angular, React and Ionic.</span></li><li></ul>",
+      "<ul><li><span>Work with a wide range of frameworks and libraries such as Angular, Vue.js, NgRx, RxJS, Vuex and Jest.</span></li><li></ul>",
       parentClass: "timelineComponentLeft",
       childClass: "timelineTooltipLeft",
     },
@@ -30,7 +30,7 @@ const Experience = () => {
         "Front-end developer @ <a href='https://www.bell.ca' target='_blank' title='Bell Canada' aria-label='Bell Canada' rel='noopener noreferrer' >Bell Canada</a>",
       location: "Toronto",
       responsibilities:
-        "<ul><li><span>Developed single page applications consuming server side JSON RESTful services.</span></li><li><span>Led the development of web apps using CMS : headless WordPress, Contentful, Strapi.</span></li><li><span>Worked closely with UX designers, project managers , back-end developers to implement versatile solutions.</span></li></ul> ",
+        "<ul><li><span>Developed single page applications consuming server side JSON RESTful services.</span></li><li><span>Led the development of web apps using CMS : headless WordPress, Contentful, Strapi.</span></li><li><span>Built CRUD App with Python, Flask, React and Redux.</span></li></ul> ",
       parentClass: "timelineComponentRight",
       childClass: "timelineTooltipRightLarge",
     },
