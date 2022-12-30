@@ -7,6 +7,8 @@ const Contact = () => {
     window.scrollTo(0, 0)
   }
 
+  const currentYear=new Date().getFullYear();
+
   return (
     <div className={styles.contact} id="contact">
       <h4>Let's Connect</h4>
@@ -39,7 +41,7 @@ const Contact = () => {
       <hr></hr>
 
       <div className={styles.authorText}>
-        <label>© 2022 - Designed and Developed by Angel Anna Mathew</label>
+        <label>© {currentYear} - Designed and Developed by Angel Anna Mathew</label>
         <button
           aria-label="Arrow"
           className={styles.scrollTopButton}
