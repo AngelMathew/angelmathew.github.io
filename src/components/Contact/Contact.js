@@ -39,7 +39,7 @@ const Contact = () => {
       <hr></hr>
 
       <div className={styles.authorText}>
-        <label>© 2022 - Designed and Developed by Angel Anna Mathew</label>
+        <label>© 2024 - Designed and Developed by Angel Anna Mathew</label>
         <button
           aria-label="Arrow"
           className={styles.scrollTopButton}
