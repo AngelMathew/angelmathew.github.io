@@ -3,51 +3,34 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import * as styles from "./header.module.scss"
 import Logo from "../../images/Logo.svg"
-import { useLocation } from "@reach/router"
 
 const Header = () => {
-  const currentPath = useLocation().pathname
-  const scrollToBottom = () => {
-    window.scrollTo(0, document.body.scrollHeight)
+  const scrollToId = id => {
+    const element = document.getElementById(id)
+    element.scrollIntoView({ behavior: "smooth" })
   }
   return (
     <header>
       <div className={styles.header}>
-        {/* <div className={styles.textClass}><a href="/" aria-label="home"><img src={Logo} alt="Logo Image"></img></a></div>
         
-        <ul className={styles.mainNavLink}>
-            <li className={styles.navLinks}> <a  href="/"  aria-label="about"
-            className={
-              currentPath === "/"
-                ? styles.navLink + " " + styles.selected
-                : styles.navLink
-            }>About</a></li>
-            <li className={styles.navLink}>
-                <a onClick={()=>scrollToBottom()}  aria-label="contact">Contact</a></li>
-        </ul> */}
-
         <Link to="/" className={styles.textClass}>
           <img src={Logo} alt="Logo Image" className={styles.logo}></img>
         </Link>
 
         <ul className={styles.mainNavLink}>
           <li className={styles.navLinks}>
-            <Link
-              to="/"
+            <a
+              className={styles.navLink}
+              onClick={() => scrollToId("about")}
               aria-label="about"
-              className={
-                currentPath === "/"
-                  ? styles.navLink + " " + styles.selected
-                  : styles.navLink
-              }
             >
               About
-            </Link>
+            </a>
           </li>
           <li>
             <a
               className={styles.navLink}
-              onClick={() => scrollToBottom()}
+              onClick={() => scrollToId("contact")}
               aria-label="contact"
             >
               Contact

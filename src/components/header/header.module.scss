@@ -9,7 +9,6 @@
   grid-template-columns: repeat(12, 1fr);
   padding: 0.5em 0;
   align-items: center;
-  // height: 70px;
   position: relative;
   margin-bottom: 2em;
   box-shadow: 0px 2px 40px $background__shadow;
@@ -32,9 +31,9 @@
   margin-bottom: 0.5em;
   padding-bottom: 0.2em;
 
-  &.selected {
-    border-bottom: 2px solid $highlight__text;
-  }
+  // &.selected {
+  //   border-bottom: 2px solid $highlight__text;
+  // }
 }
 .navLink:hover {
   border-bottom: 2px solid $highlight__text;

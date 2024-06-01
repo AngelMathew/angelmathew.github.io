@@ -6,7 +6,7 @@ const Contact = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0)
   }
-
+const year=new Date(). getFullYear();
   return (
     <div className={styles.contact} id="contact">
       <h4>Let's Connect</h4>
@@ -39,7 +39,7 @@ const Contact = () => {
       <hr></hr>
 
       <div className={styles.authorText}>
-        <label>© 2024 - Designed and Developed by Angel Mathew</label>
+        <label>© {year} - Designed and Developed by Angel Anna Mathew</label>
         <button
           aria-label="Arrow"
           className={styles.scrollTopButton}

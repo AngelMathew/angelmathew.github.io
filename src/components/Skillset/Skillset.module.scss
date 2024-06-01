@@ -6,17 +6,18 @@
   grid-template-columns: repeat(12, 1fr);
   grid-column: 2/12;
 }
+
 .skillSetSummary {
   grid-column: 2/12;
   position: relative;
 }
 .highlighted {
-  color: $highlight__text;
+  color: $highlight__text_two;
   display: inline;
 }
 .backgroundImage {
   position: absolute;
-  width: 70%;
+  width: 90%;
   right: 0;
   z-index: -1;
   opacity: 0.7;

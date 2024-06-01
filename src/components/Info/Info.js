@@ -4,9 +4,9 @@ import DisplayPicture from "../../components/DisplayPicture/DisplayPicture"
 import Button from "../Button/Button"
 import Skillset from "../../components/Skillset/Skillset"
 import Experience from "../../components/Experience/Experience"
+import Projects from "../../components/Projects/Projects"
 import AOS from "aos"
 import "aos/dist/aos.css"
-// import Wave from "../../images/wave.svg"
 
 const Info = () => {
   useEffect(() => {
@@ -27,8 +27,9 @@ const Info = () => {
           <h1>Angel Anna Mathew,</h1>
           <br></br>
           <p>
-          a Toronto based front-end developer, currently working at Rangle.io. I focus on crafting responsive, performant, and accessible
-          digital experiences.
+            a Toronto based software developer, currently working at Rangle.io.
+            I focus on crafting responsive, performant, and accessible digital
+            experiences.
           </p>
           <br></br>
           <Button />
@@ -36,8 +37,8 @@ const Info = () => {
         <DisplayPicture />
       </section>
       <Skillset />
+      {/* <Projects/> */}
       <Experience />
-      {/* <Timeline/> */}
     </>
   )
 }

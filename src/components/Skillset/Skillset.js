@@ -3,6 +3,8 @@ import * as styles from "./Skillset.module.scss"
 import Vector from "../../images/Vector.svg"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import Quote from "../Quote/Quote"
+import Contentful from "../../images/contentful.png"
 
 const Skillset = () => {
   useEffect(() => {
@@ -10,11 +12,23 @@ const Skillset = () => {
       duration: "500",
     })
   }, [])
-
+  const skillset = [
+    { id: 1, skill: "Node.JS" },
+    { id: 2, skill: "Jest" },
+    { id: 3, skill: "NgRx" },
+    { id: 4, skill: "Python" },
+    { id: 5, skill: "Strapi" },
+    { id: 6, skill: "D3.JS" },
+    { id: 11, skill: "Vuex" },
+    { id: 12, skill: "Vue Test Utils" },
+    { id: 7, skill: "Analog.JS" },
+    { id: 8, skill: "Gatsby" },
+    { id: 9, skill: "Ionic" },
+    { id: 10, skill: "k6" },
+  ]
   return (
-    // <div className={styles.skillSet}>
     <section className={styles.skillSet} data-aos="fade-in">
-      <div className={styles.skillSetSummary}>
+      <div className={styles.skillSetSummary} id="about">
         <img
           className={styles.backgroundImage}
           src={Vector}
@@ -22,54 +36,57 @@ const Skillset = () => {
         ></img>
         <h2>About</h2>
         <span>
-          I hail from a southern state in India called Kerala 🌴, and for the
-          last few years I’ve been living in Canada. At Rangle, 
-          I develop web app for a major American airline.
-          Prior to Rangle, I worked at Bell Canada in their Field Services department, 
-          where I developed (and occasionally designed) internal projects and web applications used by technicians and control centre agents in servicing Bell's end customers. 
-
+          I hail from a southern state in India called Kerala 🌴, and I've been
+          residing in Canada for the past few years. At Rangle, I develop web
+          apps for a major American airlines. Before Rangle, I worked at Bell
+          Canada in their Field Services department, where I developed in-house
+          projects and web applications used by technicians and control center
+          agents in servicing Bell's end customers.
         </span>
         <br></br>
         <span>
-          I have 4+ years of experience in front-end development, where I
-          specialize in translating UX mockups into responsive interfaces that
-          work seamlessly across any device. I also occasionally design user
-          experiences to high-fidelity prototypes.
-        </span>
-        <span>
-          My interest in web development started in last years of my bachelor’s
-          degree in Computer Science Engineering. Soon after graduation I
-          started my career at Tata Consultancy Services (TCS), India as a
-          front-end developer and worked on web applications using AngularJS,
-          Angular, HTML5, CSS3, JavaScript.
-        </span>
-        <span>
-          Apart from UI/UX, I have an interest in full-stack development, in
-          particular, I enjoy coding in Python.
+          Over the past six years, I've honed my skills in software development,
+          specializing in Angular, Node.JS, Nest.JS, Vue, React, and Python. My
+          work has spanned diverse sectors, including airlines, automotive,
+          electronics, pharmaceutical, and telecommunication. This unique
+          exposure has allowed me to master the art of balancing solutions
+          between customer needs and user experience.
         </span>
         <br></br>
-        <span aria-label="cooking, working out , watching dog cat and bunny videos">
-          *In my off time, you will find me cooking, working out, or watching
-          adorable animal videos, especially 🐶 🐱 🐰 .
+        <span>
+          My journey into web application development began in the final years
+          of my bachelor's degree in Computer Science Engineering. After
+          graduation, I joined Tata Consultancy Services, as a developer. The
+          experience of working alongside exceptional colleagues, mentors, and
+          clients has been instrumental in my professional growth and learning. 
         </span>
-        <h3>Skills :</h3>
-
-        <div className={styles.lineVerical}></div>
+        <Quote></Quote>
+        <h2>Skills</h2>
+        <span>
+          I work with various programming languages and frameworks, including{" "}
+          <span className={styles.highlighted}>
+            JavaScript, TypeScript, Angular, Nest.JS, React.JS, and Vue.JS
+          </span>
+          . I'm also interested in content management systems (CMS) and I'm a{" "}
+          <span className={styles.highlighted}>
+            Contentful Cerified Professional.
+          </span>{" "}
+          <img
+            src={Contentful}
+            alt="Display Picture"
+            loading="lazy"
+            height="25px"
+            width="25px"
+          ></img>
+          <br></br>Besides these skills, I'm proficient in tools and
+          technologies including :
+        </span>
+        <br></br>
 
         <ul className={styles.skillSetList}>
-          <li>JavaScript (ES6+)</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Angular</li>
-          <li>Python</li>
-          <li>Ionic</li>
-          <li>Modern (S)CSS</li>
-          <li>HTML5</li>
-          <li>Gatsby</li>
-          <li>UI/UX Design</li>
-          <li>Contentful</li>
-          <li>WordPress</li>
-          <li>Strapi</li>
+          {skillset.map(item => {
+            return <li key={item.id}>{item.skill}</li>
+          })}
         </ul>
       </div>
     </section>

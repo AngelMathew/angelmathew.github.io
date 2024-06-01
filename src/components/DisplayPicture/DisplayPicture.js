@@ -10,7 +10,7 @@ const DisplayPicture = () => {
           src={DisplayPhoto}
           alt="Display Picture"
           loading="lazy"
-          height="300px"
+          height="100px"
           width="100px"
         ></img>
       </figure>
