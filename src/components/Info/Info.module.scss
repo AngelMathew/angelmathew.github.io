@@ -11,17 +11,8 @@
 }
 .wave {
   display: inline-block;
-  // padding: 1em;
-  // align-content: center;
   position: relative;
-  // margin: 0 0.2em;
-
-  // img {
-  // height: 1em;
-  // width: 1em;
-  // position: relative;
   animation: moving 4 0.7s;
-  // }
 }
 
 .wave:hover {
@@ -55,7 +46,6 @@
     .infoSummary {
       grid-column: 2/12;
       margin-top: 2em;
-      // background-color: aqua;
     }
   }
 }

@@ -2,7 +2,8 @@ import React, { useEffect } from "react"
 import * as styles from "./Experience.module.scss"
 import Location from "../../images/Location.svg"
 import AOS from "aos"
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
+import Vector from "../../images/VectorTwo.svg"
 
 const Experience = () => {
   useEffect(() => {
@@ -19,7 +20,7 @@ const Experience = () => {
         "Front-end developer @ <a href='https://www.rangle.io' target='_blank' title='Rangle' aria-label='Rangle' rel='noopener noreferrer' >Rangle.io</a>",
       location: "Toronto",
       responsibilities:
-      "<ul><li><span>Work with a wide range of frameworks and technologies such as ES6, TypeScript, Angular, React and Ionic.</span></li><li></ul>",
+      "<ul><li><span>Work on client projects building front-end enterprise Angular applications and RESTful microservices in Nest.JS</span></li><li></ul>",
       parentClass: "timelineComponentLeft",
       childClass: "timelineTooltipLeft",
     },
@@ -30,7 +31,7 @@ const Experience = () => {
         "Front-end developer @ <a href='https://www.bell.ca' target='_blank' title='Bell Canada' aria-label='Bell Canada' rel='noopener noreferrer' >Bell Canada</a>",
       location: "Toronto",
       responsibilities:
-        "<ul><li><span>Developed single page applications consuming server side JSON RESTful services.</span></li><li><span>Led the development of web apps using CMS : headless WordPress, Contentful, Strapi.</span></li><li><span>Worked closely with UX designers, project managers , back-end developers to implement versatile solutions.</span></li></ul> ",
+        "<ul><li><span>Developed single page applications consuming server side JSON RESTful services</span></li><li><span>Led the development of web apps using CMS : headless WordPress, Contentful, Strapi</span></li></ul> ",
       parentClass: "timelineComponentRight",
       childClass: "timelineTooltipRightLarge",
     },
@@ -41,7 +42,7 @@ const Experience = () => {
         "Python Lab Assistant @ <a href='https://www.dal.ca/' target='_blank' title='Dalhousie University' aria-label='Dalhousie University' rel='noopener noreferrer' >Dalhousie University</a>",
       location: "Halifax,NS",
       responsibilities:
-        "<ul><li><span>Helped students to understand algorithms and data structures.</span></li><li><span>Supported students to debug and understand the Python code.</span></li><li><span>Assisted students with python language, Flask Framework, Git version control.</span></li></ul> ",
+        "<ul><li><span>Helped students to understand algorithms and data structures, debug code</span></li><li><span>Assisted students with python language, Flask Framework, Git version control</span></li></ul> ",
       parentClass: "timelineComponentLeft",
       childClass: "timelineTooltipLeft",
     },
@@ -106,8 +107,12 @@ const Experience = () => {
   return (
     <section className={styles.experienceParent}>
       <h2 className={styles.timelineHeading}>Experience</h2>
+      <img
+          className={styles.backgroundImage}
+          src={Vector}
+          alt="Background"
+        ></img>
       <div className={styles.timelineParent} data-aos="fade-up">
-        {/* <div className={styles.timelineParent}> */}
         <div className={styles.verticalLine}></div>
         {tooltipValue}
       </div>
