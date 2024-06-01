@@ -39,7 +39,7 @@ const year=new Date(). getFullYear();
       <hr></hr>
 
       <div className={styles.authorText}>
-        <label>© {year} - Designed and Developed by Angel Anna Mathew</label>
+        <label>© {year} - designed and developed by Angel Anna Mathew</label>
         <button
           aria-label="Arrow"
           className={styles.scrollTopButton}
