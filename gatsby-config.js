@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Front-end Developer`,
     description: `Front end developer portfolio`,
+    keywords:`blog, web developer, portfolio, gatsby`,
     siteUrl: `https://angelannamathew.net`,
     author: `@angel`,
   },
