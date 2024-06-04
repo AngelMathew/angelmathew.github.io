@@ -4,17 +4,16 @@ import Layout from "../components/layout"
 import Header from "../components/header/header"
 import Info from "../components/Info/Info"
 import Contact from "../components/Contact/Contact"
+import { graphql } from "gatsby"
 
-const IndexPage = () => {
+export default function  IndexPage({data}){
+  const projects=data.allMarkdownRemark.nodes
   return (
     <Layout title="Angel Anna Mathew">
       <>
-        <header>
           <Header />
-        </header>
-
         <main>
-          <Info />
+          <Info projects={projects}/>
         </main>
 
         <footer>
@@ -25,4 +24,27 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export const query=graphql`
+query ProjectsPage {
+  allMarkdownRemark {
+    nodes {
+      frontmatter {
+        stack
+        title
+        slug
+        tags
+        summary
+        thumb {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+      id
+    }
+  }
+}
+`
+

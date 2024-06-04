@@ -42,7 +42,7 @@ h1 {
 h2 {
   color: $subHeading__text;
   font-size: 2.5rem;
-  margin: 1em 0 .5em 0;
+  margin: 1em 0 0.5em 0;
 }
 
 h4 {
@@ -96,7 +96,7 @@ button {
 
 a {
   text-decoration: none;
-  color: $secondary__text;
+  color: $highlight__text;
   cursor: pointer;
 }
 * {
@@ -109,5 +109,49 @@ a {
   }
   &:after {
     box-sizing: inherit;
+  }
+}
+blockquote {
+  border-left: 0.2em solid $highlight__text;
+  padding-left: 1em;
+}
+
+pre {
+  background-color: $code_background__two;
+
+  margin: 0.5em 0;
+  border-radius: 0.3em;
+  padding: 0.5em 0;
+  overflow: scroll;
+  code {
+    background: transparent;
+  }
+}
+code {
+  background-color: $code_background;
+  word-wrap: break-word;
+  border-radius: 2px;
+  padding: 2px;
+}
+
+table td,
+th {
+  border: 1px solid $primary__text;
+  padding: 8px;
+  word-wrap: break-word;
+}
+
+table th {
+  padding: 8px;
+  background-color: $green;
+  color: $primary__text;
+}
+@media screen and (max-width: 48em) {
+  .blockquote h1 {
+    font-size: 60px;
+  }
+  pre {
+    white-space: initial;
+    word-wrap: break-word;
   }
 }

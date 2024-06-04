@@ -1,31 +1,30 @@
 import React from "react"
 import * as styles from "./projects.module.scss"
-import Proj from "../../images/projectImageOne.jpg"
-const skillset = [
-  {
-    id: 1,
-    title: "Analog.JS & Contentful",
-    tags: ["AnalogJS", "CMS", "Dynamic Components"],
-  },
-  { id: 2, title: "Angular & Strapi", tags: ["Angular", "CMS"] },
-  { id: 3, title: "Chatbot", tags: ["GenAI", "Node.JS"] },
-]
-const Projects = () => {
+import Img from "gatsby-image"
+import { Link } from "gatsby"
+
+export default function Projects({projects}) {
+
   return (
     <section className={styles.projectWrapper}>
       <h2>Projects</h2>
       <div className={styles.projectsDiv}>
-        {skillset.map(item => {
+        {projects.map(item => {
           return (
-            <div className={styles.project}>
-              <img src={Proj} loading="lazy" height="350px" width="280px" />
-              <h3 key={item.id}>{item.title}</h3>
-              <h4>summary</h4>
-              <div>
-                {item.tags.map(i => {
-                  return <p className={styles.projectTags}>{i}</p>
+            <div className={styles.project} key={item.id}>
+              <Link to={"/projects/"+item.frontmatter.slug}>
+                <Img fluid={item.frontmatter.thumb.childImageSharp.fluid} style={{'height' : '20rem'}}/>
+                <div className={styles.projectContent}>
+                <h3>{item.frontmatter.title}</h3>
+                <span>{item.frontmatter.summary}</span>
+                <br></br>
+                <div>
+                {item.frontmatter.tags.map(i => {
+                  return <p className={styles.projectTags} key={i}>{i}</p>
                 })}
+              </div> 
               </div>
+            </Link>
             </div>
           )
         })}
@@ -34,4 +33,3 @@ const Projects = () => {
   )
 }
 
-export default Projects
