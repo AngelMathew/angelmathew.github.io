@@ -7,13 +7,14 @@ import Contact from "../components/Contact/Contact"
 
 export default function ProjectDetails({ data }) {
   const { html } = data.markdownRemark
+  const { title } = data.markdownRemark.frontmatter
+  const { summary } = data.markdownRemark.frontmatter
   const { featuredImg } = data.markdownRemark.frontmatter
   const showData = false
   return (
-    <Layout title="Angel Anna Mathew">
+    <Layout title={title} description={summary}>
       <>
         <Header $showdata={showData} />
-
         <div
           style={{
             display: "grid",
@@ -45,6 +46,7 @@ export const query = graphql`
       frontmatter {
         stack
         title
+        summary
         featuredImg {
           childImageSharp {
             fluid {
