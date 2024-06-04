@@ -8,7 +8,7 @@ import Projects from "../../components/Projects/Projects"
 import AOS from "aos"
 import "aos/dist/aos.css"
 
-const Info = () => {
+const Info = ({projects}) => {
   useEffect(() => {
     AOS.init({
       duration: "1000",
@@ -37,7 +37,7 @@ const Info = () => {
         <DisplayPicture />
       </section>
       <Skillset />
-      {/* <Projects/> */}
+      <Projects projects={projects}/>
       <Experience />
     </>
   )
