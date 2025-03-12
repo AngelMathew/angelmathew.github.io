@@ -47,6 +47,10 @@ function Seo({ description="Angel's portfolio website", lang='en', meta=[], titl
           content: site.siteMetadata.keywords,
         },
         {
+          name: `author`,
+          content: site.siteMetadata.author,
+        },
+        {
           property: `og:title`,
           content: title,
         },

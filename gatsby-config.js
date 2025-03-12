@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Front-end Developer`,
-    description: `Front end developer portfolio`,
-    keywords:`blog, web developer, portfolio, gatsby`,
+    description: `Angel Anna Mathew is a Toronto-based software developer specializing in front-end development. She primarily works with JavaScript, TypeScript, Node.JS, React, Angular, and a variety of content management systems (CMS)`,
+    keywords:`blog, developer portfolio, portfolio, gatsby`,
     siteUrl: `https://angelannamathew.net`,
-    author: `@angel`,
+    author: `Angel Anna Mathew`,
   },
   plugins: [
     `gatsby-plugin-sass`,
